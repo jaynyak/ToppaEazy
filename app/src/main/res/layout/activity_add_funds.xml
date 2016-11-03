@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_funds"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zw.co.jaynyak_e_solutions.toppaeazy.AddFundsActivity"
+    android:background="@drawable/toppaeazy_gradient">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/addFundsEditText"
+        android:hint="@string/amount1"
+        android:background="#fff"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="199dp"/>
+
+    <Button
+        android:text="@string/add_funds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:id="@+id/addFundsButton"
+        android:layout_below="@+id/addFundsEditText"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.Button"
+        android:background="#66cdaa"
+        android:textColor="#fffaf0"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ecocas_logo2"
+        android:id="@+id/ecocashImageView"
+        android:layout_marginTop="113dp"
+        android:layout_below="@+id/addFundsButton"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:text="@string/add_funds_ecocash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#fffaf0"
+        tools:ignore="UnusedAttribute"/>
+</RelativeLayout>

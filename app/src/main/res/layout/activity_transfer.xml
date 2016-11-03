@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transfer_actvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zw.co.jaynyak_e_solutions.toppaeazy.TransferActvity"
+    android:background="@drawable/toppaeazy_gradient">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:layout_below="@+id/transferEditText"
+        android:layout_alignLeft="@+id/transferEditText"
+        android:layout_alignStart="@+id/transferEditText"
+        android:layout_marginTop="17dp"
+        android:id="@+id/editText2"/>
+
+    <Button
+        android:text="@string/transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transferButton"
+        style="@android:style/Widget.Button"
+        android:layout_marginBottom="78dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap"
+        android:background="#66cdaa"
+        android:textColor="#fffaf0"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/hot_1"
+        android:id="@+id/imageView4"
+        android:layout_marginBottom="14dp"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="@string/to_transfer_funds_to_another_hot_recharge_account_enter_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#fffaf0"
+        android:fontFamily="sans-serif-condensed"
+        tools:ignore="UnusedAttribute"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/transferEditText"
+        android:hint="@string/amount2"
+        android:background="#fff"
+        android:textAlignment="center"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/numEditText"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/pinEditText1"
+        android:background="@android:color/background_light"
+        android:hint="@string/pin1"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="61dp"
+        android:id="@+id/numEditText"
+        android:hint="@string/enter_phone_number"
+        android:background="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/transferEditText"
+        android:layout_alignStart="@+id/transferEditText"/>
+</RelativeLayout>

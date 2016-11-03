@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="zw.co.jaynyak_e_solutions.myapplication.MainActivity">
+
+    <item
+        android:id="@+id/action_recharge"
+        android:orderInCategory="100"
+        android:title="@string/action_recharge"
+        />
+    <item
+        android:id="@+id/action_register_with_hot"
+        android:orderInCategory="100"
+        android:title="@string/action_register_with_hot"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_ecoCash_topUp"
+        android:orderInCategory="100"
+        android:title="@string/action_ecoCash_topUp"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_transfer_funds"
+        android:orderInCategory="100"
+        android:title="@string/action_transfer_funds"
+        />
+</menu>

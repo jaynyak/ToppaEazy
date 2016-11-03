@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ToppaEazy</string>
+    <string name="amount">$0.10 - $50</string>
+    <string name="pin">0000</string>
+    <string name="phone_number">ENTER PHONE NUMBER</string>
+    <string name="sale_airtime_to_all_networks">The easiest way to sale Airtime across all Networks</string>
+    <string name="toppaeazy">Welcome To ToppaEazy!</string>
+    <string name="action_register_with_hot">REGISTER</string>
+    <string name="action_ecoCash_topUp">ADD FUNDS</string>
+    <string name="action_transfer_funds">TRANSFER FUNDS</string>
+    <string name="instructions_to_register">please enter your details to register</string>
+    <string name="first_name">FirstName :</string>
+    <string name="surname">Surname :</string>
+    <string name="id_no">ID No. : 88-8888888N88</string>
+    <string name="action_recharge">AIRTIME TOPUP</string>
+    <string name="amount1">$20 - $500</string>
+    <string name="add_funds">ADD FUNDS</string>
+    <string name="add_funds_ecocash">ENTER AMOUNT YOU WANT ADD TO YOUR ACCOUNT USING ECOCASH</string>
+    <string name="amount2">$20 - $500</string>
+    <string name="pin1">0000</string>
+    <string name="enter_phone_number">ENTER PHONE NUMBER</string>
+    <string name="to_transfer_funds_to_another_hot_recharge_account_enter_amount">TO TRANSFER FUNDS TO ANOTHER HOT RECHARGE ACCOUNT ENTER AMOUNT</string>
+    <string name="transfer">TRANSFER</string>
+    <string name="balance">BALANCE</string>
+    <string name="powered_by">POWERED BY</string>
+    <string name="recharge">CONFIRM</string>
+</resources>

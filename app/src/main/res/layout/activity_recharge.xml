@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zw.co.jaynyak_e_solutions.toppaeazy.RechargeActivity"
+    android:background="@drawable/toppaeazy_gradient">
+
+    <TextView
+        android:text="@string/toppaeazy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/welcomeTextView"
+        android:textSize="24sp"
+        android:textColor="#fffaf0"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/pinEditText"
+        android:layout_below="@+id/amountEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:textAlignment="center"
+        android:background="#fff"
+        android:hint="@string/pin"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/phoneEditText"
+        android:layout_below="@+id/airtimeTextView"
+        android:layout_alignLeft="@+id/pinEditText"
+        android:layout_alignStart="@+id/pinEditText"
+        android:hint="@string/phone_number"
+        android:textAlignment="center"
+        android:background="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="34dp"
+        android:id="@+id/amountEditText"
+        android:layout_below="@+id/phoneEditText"
+        android:layout_alignLeft="@+id/pinEditText"
+        android:layout_alignStart="@+id/pinEditText"
+        android:background="#fff"
+        android:hint="@string/amount"
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="@string/recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinEditText"
+        android:layout_alignLeft="@+id/welcomeTextView"
+        android:layout_alignStart="@+id/welcomeTextView"
+        android:layout_marginTop="33dp"
+        android:id="@+id/rechargeButton"
+        style="@android:style/Widget.Button"
+        android:background="#66cdaa"
+        android:textColor="#fffaf0"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <Button
+        android:text="@string/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balanceButton"
+        android:layout_alignBaseline="@+id/rechargeButton"
+        android:layout_alignBottom="@+id/rechargeButton"
+        android:layout_marginTop="33dp"
+        android:layout_alignRight="@+id/welcomeTextView"
+        android:layout_alignEnd="@+id/welcomeTextView"
+        style="@android:style/Widget.Button"
+        android:background="#66cdaa"
+        android:textColor="#fffaf0"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:layout_below="@+id/rechargeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/buddie"
+        android:id="@+id/imageView5"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/telecel"
+        android:id="@+id/imageView7"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/africom"
+        android:id="@+id/imageView8"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/netone"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"/>
+
+    <TextView
+        android:text="TopUp Airtime Across all Networks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/airtimeTextView"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="#fffaf0"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

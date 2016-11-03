@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zw.co.jaynyak_e_solutions.toppaeazy.MainActivity"
+    android:background="@drawable/toppaeazy_gradient">
+
+    <TextView
+        android:text="@string/toppaeazy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/welcomeTextView"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fffaf0"/>
+
+    <TextView
+        android:text="@string/sale_airtime_to_all_networks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/airtimeTextView"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fffaf0"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/econet_wireless1"
+        android:id="@+id/imageView"
+        android:layout_marginTop="334dp"
+        android:layout_below="@+id/airtimeTextView"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/hot_recharge1"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:text="POWERED BY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fffaf0"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/top"
+        android:id="@+id/topUpImageView"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/airtimeTextView"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"/>
+
+    <TextView
+        android:text="Airtime TopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/topUpTextView"
+        android:layout_below="@+id/topUpImageView"
+        android:layout_alignLeft="@+id/welcomeTextView"
+        android:layout_alignStart="@+id/welcomeTextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:textColor="#fff6fbfa"/>
+
+    <TextView
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/topUpTextView"
+        android:layout_alignLeft="@+id/registerImageView"
+        android:layout_alignStart="@+id/registerImageView"
+        android:id="@+id/regTextView"
+        android:textColor="#fff6fbfa"/>
+
+    <TextView
+        android:text="Transfer Funds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/TransferFundsTextView"
+        android:layout_below="@+id/addFundsImageView"
+        android:layout_alignRight="@+id/topUpTextView"
+        android:layout_alignEnd="@+id/topUpTextView"
+        android:textColor="#fff6fbfa"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/register"
+        android:id="@+id/registerImageView"
+        android:layout_above="@+id/topUpTextView"
+        android:layout_alignLeft="@+id/addFundsImageView"
+        android:layout_alignStart="@+id/addFundsImageView"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/transfer_funds"
+        android:id="@+id/transferImageView"
+        android:layout_marginBottom="62dp"
+        android:layout_above="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"/>
+
+    <TextView
+        android:text="Add Funds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFundTextView"
+        android:layout_alignBaseline="@+id/TransferFundsTextView"
+        android:layout_alignBottom="@+id/TransferFundsTextView"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:textColor="#fff6fbfa"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/wallet_icon"
+        android:id="@+id/addFundsImageView"
+        android:layout_alignTop="@+id/transferImageView"
+        android:layout_alignLeft="@+id/addFundTextView"
+        android:layout_alignStart="@+id/addFundTextView"/>
+
+
+</RelativeLayout>
